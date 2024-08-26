@@ -25,7 +25,7 @@ app.use((error, req, res, next) => {
     });
   }
 
-  console.error(err); // para debugar os erros
+  console.error(error); // para debugar os erros
 
   // se for error do servidor
   return res.status(500).json({
