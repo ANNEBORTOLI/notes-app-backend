@@ -1,10 +1,14 @@
 require("express-async-errors");
 
+const migrationsRun = require("./database/sqlite/migrations");
+
 const AppError = require("./utils/AppError"); // utils para tratar erros
 
 const express = require("express");
 
 const routes = require("./routes"); //importa todas as rotas do index.js
+
+migrationsRun(); // executa as migrations
 
 const app = express(); // inicializando o express
 app.use(express.json()); // estabelece o padrão JSON para req e res.
