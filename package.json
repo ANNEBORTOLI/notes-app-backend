@@ -1,0 +1,20 @@
+{
+  "name": "rocketseat-explorer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js"
+  },
+  "keywords": [],
+  "author": "Anne Bortoli",
+  "license": "ISC",
+  "description": "API Explorer",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-async-errors": "^3.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
